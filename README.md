@@ -17,7 +17,7 @@ A single page (index.html) has
 
 Add extra inputs and modify the code to output a story when the submit button is pressed.
 
-This will be added to your portfolioi later... but is a stand alone assignment for the time being.
+This will be added to your portfolio later... but is a stand alone assignment for the time being.
 
 <br>
 
@@ -27,5 +27,7 @@ You can look at the different form input fields at w3 schools.
 https://www.w3schools.com/html/html_forms.asp if you want to explore more than text inputs.
 
 You could modify this to be a Mad Lib kind of game.
+
+http://www.madlibslive.com/whats-a-mad-lib ? 
 
 Feel free to modify style and colour as you like.
