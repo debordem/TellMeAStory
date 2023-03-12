@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>StoryTime</title>
+    <style>
+        #output { border:1px solid black;
+                  width:200px;
+                  height:200px;
+                  overflow-y: scroll; }
+    </style>
+</head>
+<body>
+
+    <h1>Tell Me a Story</h1>
+
+    <form id="inputForm">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="John"><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Smith"><br><br>
+
+        <input type="button" value="Submit" onclick="tellMeAStory()">
+        <input type="reset" value="Reset">
+        
+      </form>
+      
+      <br>
+    
+      <div id="output"></div>
+      <br>
+      <input type="button" value="Reset Story" onclick="resetStory()">
+
+    
+    
+</body>
+
+<script>
+    // global variable for the output element
+    var output = document.getElementById("output")
+
+    // reset function, resets the form and the output element
+    function resetStory() {
+       
+        //document.getElementById("output").innerHTML = "";
+        output.innerHTML = "";
+        document.getElementById("inputForm").reset;
+    }
+
+    /*
+    tellMeAStory function.
+        Gathers each input as a varaible then constructs a string to output to the page
+    */
+    
+    function tellMeAStory() {
+
+        // collect the input as variables
+        var fNameValue = document.getElementById("fname").value;
+        var lNameValue = document.getElementById("lname").value;
+
+
+        // asemble the message
+        //let message = "Hello "+fNameValue+" "+lNameValue;
+
+        /* 
+            Alternate with backticks around the string... not single quotes
+
+            let message = `Hello ${fNameValue} ${lNameValue}`;
+        */
+
+        let message = `Hello ${fNameValue} ${lNameValue}`;
+
+        //output the emessage
+
+        output.innerHTML = message;
+
+
+
+    }
+
+
+</script>
+</html>
