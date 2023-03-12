@@ -1,6 +1,8 @@
 # Tell Me A Story
 This little project is an introduction to input and Javascript
 
+!! You will have to test from a Web Browser not the preview as it has Javascript !!
+
 A single page (index.html) has 
 <ul><li>style in the head</li>
     <li> a form in the body</li>
